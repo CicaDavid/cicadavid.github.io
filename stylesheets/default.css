@@ -1,0 +1,9 @@
+/* Default Styles for DavyWebz main site and blog index/posts */
+
+*{background: rgb(242,242,242);
+font-family: "Lucida Console",monospace; color: #550000
+}
+
+h{font-family: "Verdana",Arial,sans-serif; font-weight: bold;}
+
+.caption{text-align: center; font-style: italic; font-size: .9em}

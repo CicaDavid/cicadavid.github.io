@@ -1,0 +1,17 @@
+/* for individual blog posts*/
+*{margin-left: 16px}
+
+
+
+h1{width: 100%; font-family: Verdana,Arial,sans-serif; font-size: xx-large; margin-left: -2em; margin-bottom: 0px}
+
+h2, h4{display: inline-block}
+h4{padding-left: 4em} 
+
+
+p{margin: 0px 0px 0px 0px; padding: .5em 4em .5em 0; }
+p, li{font-size: .8em}
+
+.divZ{position:fixed; bottom: 4px; left: 16px}
+
+/*rev1
