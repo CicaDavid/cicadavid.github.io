@@ -19,5 +19,7 @@ div{}
 .divC h3, .divC img, .divC ul, .divC li, .divC a, .divC p{color:rgb(217,217,217);background-color: #550000;}
 .divC h3{margin-top: 2.1em;}
 
+.weetext{font-size: .87em}
+
   	/*
 	.divC li{color:rgb(217,217,217);background-color: #550000;}

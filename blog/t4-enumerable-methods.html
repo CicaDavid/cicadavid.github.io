@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>DavyWebz' Cicada TechnoBlog</title>
+  <!-- or <title>DavyWebz' Cicada CulturBlog</title>  -->
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css"/>
+</head>
+
+<main>
+  <h1><img src="../imgs/redbigbutton.png" alt="bigbutton">Enumerable#map</h1>
+  <h2>Map Manipulates Collections</h2>
+  <h4>11 July 2015</h4>
+
+  <section>
+    <p>The map method comes courtesy of the Enumerables mix-in, which provides collection classes with methods to search, sort, or traverse the collection. The class itself must provide an .each method.  Whereas the Array class supports the .map method (and also offers the destructive form .map!), in contrast the Hash class does not. Here is the definition of .map in the Ruby 2.2.0 docs:
+
+    </p><p><img src="../imgs/mapfromrubydoc.png" alt="screengrab">
+
+    </p><p>The .map method is straightforward: if a block is given, the map method creates a new collection from the source collection in accordance with what the block specifies. If no block is given, .map returns an Enumerator. What does that mean?
+
+    </p><p>At this stage in our Ruby education, I think that question is more perplexing than discerning what map does -- which is easy. The Enumerator is a class object that allows both internal and external iteration. Makes sense, but what does that mean.
+
+    </p><p>It appears that the Enumerator could be described as an interim index generated from the method which gets passed into the next method (or object?).  They contain information that can be used to iterate through a collection.
+
+    </p><p>Going back to .map, why use it? Fire up IRB and try this comparative example:
+
+    </p><p>> a=[1,2,3,4]
+    </p><p>> a.each { |i| i += 5}
+    </p><p>> amap = a.map { |i| i += 5}
+
+    </p><p>You will notice that although the .each block executes without error, the effect is lost. Array a keeps its original contents. To achieve the desired effect of incrementing the members of array a you must employ .map, or .map! if you wish to overwrite the original array a.
+
+
+  </p>
+  </section>
+
+</main>
+<div><a href="index.html">Portal</a>  <a href="../index.html">MainPage</a></div>
