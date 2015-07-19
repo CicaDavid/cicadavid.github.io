@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>DavyWebz' Cicada TechnoBlog</title>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css"/>
+</head>
+
+<main>
+  <h1><img src="../imgs/redbigbutton.png" alt="bigbutton">Class Objects in Ruby</h1>
+  <h2>No "stay classy" puns allowed</h2>
+  <h4>19 July 2015</h4>
+
+  <section class="nobrpls">
+    <p>Classes are suitable for organizing data when that data has two characteristics in particular. First, the object that the data pertains to should have several pieces of relevant data that we want to track or manipulate. If the list of data elements is short, you might do better with a variable or hash/array.
+
+    </p><p>Second, your circumstances should require that this data object have specialized methods that act on the object’s peculiar set of data. Otherwise, you could possibly get by with a database table where each row represents an incidence.
+
+   </p><p>I have a mild addiction to pens, and especially multi-pens with assorted ink colors. In America we are content with the classic Bic 4-color with blue barrel. Thank goodness for Japan, where they have taken pens to the next level and then some. Consequently, I have a pen-ventory that I keep in my head but could benefit from a Class, or two…
+
+   </p><p>Here in pseudocode is a partial example, presented with the caveat that the code is not complete and nor has it been vetted:
+
+   </p><p class="nobrpls">class Mypen
+
+def initialize (barrel, capacity, [<sizes>][<colors>]
+  @barrel = barrel
+  @sizes = Array.new(capacity)
+  @colors = Array.new(capacity)
+  #capture size and color info passed in …
+end
+
+def refill(size,color)
+  remove_inventory(size,color)
+end
+
+def replace(size,color,newsize,newcolor)
+  #locate current size/color
+  #change values
+
+end # end Class Mypen
+
+class Ink_inventory
+
+def initialize(opening inventory)
+ #capture attributes of starting inventory
+ #size, color, QOH
+end
+
+def remove_inventory(size,color)
+  #find size-color and decrement QOH
+  #advise if QOH falls below reorder point
+end
+
+def set_reorder_point(size,color,new_point)
+ #update value for size-color
+end
+
+def pull_order
+  #iterate inventory data structure, report items
+  #where QOH is less than reorder point
+end
+end # end Class Ink_inventory
+
+Here I’ve used two classes.  The first class lets me define the individual pens in my collection, each pen giving rise to an incidence of the class. The instance variables for an individual pen describe how that pen is currently configured. I provided methods to change the pen configuration (replace) by swapping out one ink cartridge for another. I also included a refill method.
+
+When I change out an exhausted cartridge, the refill method will update my ink inventory, which I set up as a second class even though I expect only a single incidence. What I show is an amalgam of all the items in inventory. In practice you would more likely find a class or classes for individual items (ink cartridges in this example) and another object to collect incidences of these items. But back to our all-items-in one inventory...
+
+I showed examples of instance methods that would apply to this inventory, but there’s lots of scope to add more…  If I captured the refill date then I could start tracking how long a cartridge lasts and use that to inform a method to forecast orders for refills. If I included pricing information, I could incorporate a method to determine whether I have hit the threshold for free shipping on my pending order. Because the logic for that is contained in a Class method, if the threshold rises I only have to maintain the information in one location instead of all the places the threshold test logic would otherwise be deployed.
+
+I've only scratched the surface, barely; there is much to contemplate on how to exploit class objects. Hopefully this blog has given some food for thought. Thanks for stopping by!
+
+</p>
+  </section>
+
+</main>
+<div><a href="index.html">Portal</a>  <a href="../index.html">MainPage</a></div>

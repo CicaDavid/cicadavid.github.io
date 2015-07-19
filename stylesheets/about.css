@@ -1,0 +1,25 @@
+div{}
+
+.divA{width: 41%; display:inline-block; margin-left: auto; margin-right: auto; padding-left: 1.1em}
+
+.divB{width: 41%; display: block; position: relative;
+	  margin-left: 2em; margin-right: 0px; margin-top: .5em}
+	  .divB h2{font-size: 2em;}
+	  .divB a{padding-left: 5em; text-decoration: none;}
+	  
+
+.divC{overflow: scroll;
+	  color:rgb(217,217,217);background-color: #550000;
+	  display:inline;
+	  background: #550000;
+	  margin: 0px 0px 0px 0px; padding-left: 2.5em; padding-right: 2.5em;
+	  position: fixed; top: 0px;  right:0px;
+	  width 35%; height: 100%}
+
+.divC h3, .divC img, .divC ul, .divC li, .divC a, .divC p{color:rgb(217,217,217);background-color: #550000;}
+.divC h3{margin-top: 2.1em;}
+
+.weetext{font-size: .87em}
+
+  	/*
+	.divC li{color:rgb(217,217,217);background-color: #550000;}
