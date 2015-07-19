@@ -4,6 +4,6 @@ div{padding-left: 2.4em; margin margin-top: 2em}
 .divJ{width: 100%; padding-top: 2em; padding-bottom: 2em ;
       font-family: Verdana,Arial,sans-serif; font-size: xx-large}
 
-.divK{position:fixed; bottom: 2em; margin-left: 2em}
+.divK{position:fixed; right: 2em; bottom: 2em; margin-left: 2em}
 
-.divL{width: 15em}
+.divL{overflow: scroll; margin-bottom: 4em}
