@@ -19,9 +19,17 @@ div{}
 .divC h3, .divC img, .divC ul, .divC li, .divC a, .divC p{color:rgb(217,217,217);background-color: #550000;}
 .divC h3{margin-top: 2.1em;}
 
+
+
 .weetext{font-size: .87em}
 
-.divK{position:fixed; right: 2em; bottom: 2em; margin-left: 2em}
+.nobrpls {white-space: pre-line;}
 
+.pdfroll {width=100%;
+				  height=45%
+					overflow: scroll
+					margin-bottom: 3rem}
+
+.divK{position:fixed; right: 2em; bottom: 2em; margin-left: 2em}
   	/*
 	.divC li{color:rgb(217,217,217);background-color: #550000;}
