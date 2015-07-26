@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>DavyWebz' Cicada TechnoBlog</title>
+  <!-- or <title>DavyWebz' Cicada CulturBlog</title>  -->
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css"/>
+</head>
+
+<main>
+  <h1><img src="../imgs/redbigbutton.png" alt="bigbutton">OOP Concepts</h1>
+  <h2>Variable Scope</h2>
+  <h4>26 July 2015</h4>
+
+  <section>
+    <p class="nobrpls">Quite simply, in this context 'scope' defines who can see or know about Ruby variables and their value. First, let's dispense with constants. They don't vary (or shouldn't) hence their name. They're also written in all uppercase which makes them appear BOSSY. 
+
+    Meanwhile that leaves bona fide variables to have one of four scopes:
+
+    Global variables -- written $Like_so -- can be seen and touched anywhere by anyone. In contrast, local variables like like_this_one can only be seen in the local vicinity, ususally a block, or things that can inherit from that. Names used for local variables can be reused in lots of localities so a number called "tally" in a Class method will only be reachable from that method. Another "tally" in the main body is a different object, and for all we know could contain a string "ho!".  Ho indeed.
+
+    This leaves us with the twins, instance and class variables. @one_is_per_instance of the class. Each class object will have its own instance value. @@the_class_as_a_whole shares one single value of class variables. Let's compare. If I create a credit-card class, each object would need it's own distinct card-number value. But they all share the characteristic of being 16 digits long. If that value were encoded in a single class variable, all the objects in that class could know and use a new value, dynamically, simply by chainging the one instance of that class variable.
+
+    There we have the variable scopes. But as we recently learned, it's better to conceive of variable data as message content available from methods that own the data variable. Ultimately, it may be the scope of the method that matters.
+
+
+    </p>
+  </section>
+
+</main>
+<div><a href="index.html">Portal</a>  <a href="../index.html">MainPage</a></div>
