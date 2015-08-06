@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Git Cheatsheet</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheets/cheatsheet.css"/>
+    </head>
+    
+    <body>
+        <div class="divA, nobrpls"> <h1>Three Great GitHub Recipes</h1>
+        </div>
+
+        <div class="divB, nobrpls"> <p><h3>Make a new local repo & set upstream</h3><ol><li>on Github, move to source page for repo ("original")</li><li>use Fork button to create your Github copy ("new repo")</li><li>change new repo Setting to allow Issues</li><li>copy the new repo URL</li><li>change to local directory where you want to deposit the repo</li><li>issue command: git clone &lt;url&gt;</li><li>copy URL from original, for upstream</li><li>issue command: git remote add upstream &lt;url&gt;</li></ol>check by issuing command: git remote -v
+                you should see the master point to your new repo and the upstream point to the original.</p>
+            <p><h3>Fetch upstream changes</h3><ol><li>shift (use command: git co) to the origin directory</li><li>check by issuing command: git remote -v</li><li>issue command: git fetch upstream</li><li>issue command: git branch -va</li><li>(output should include "upstream/master")</li><li>shift to master branch</li><li>issue command: git merge upstream/master</li></ol>you may need to commit, or add a commit message (if editor appears, "save")
+                confirm by issuing command: git push origin master</p>
+            <p><h3>Push task(s) / push branch</h3><ol><li>issue your choice of commands:<ul><li>git add</li><li>git commit</li><li>git commit -a</li></ul>to add changes to the head and commit the changes</li><li>send to Github; issue command: git push origin &lt;branch&gt;</li><li>checkout master</li><li> Fast Forward the master; issue command: git merge &lt;branch&gt;</li></ol>&lt;branch&gt; should now be deletable... don’t forget to pull on Github !</p></div>
+    </body>
+
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
