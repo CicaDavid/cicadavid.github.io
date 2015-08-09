@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <title>DavyWebz' Cicada TechnoBlog</title>
+  <!-- or <title>DavyWebz' Cicada CulturBlog</title>  -->
+  <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+   <link rel="stylesheet" type="text/css" href="../stylesheets/blogpost.css"/>
+</head>
+
+<main>
+  <h1><img src="../imgs/redbigbutton.png" alt="bigbutton">Sort Of</h1>
+  <h2>Order, please!</h2>
+  <h4>8 August 2015</h4>
+
+  <section>
+    <p class="nobrpls">For this exercise I decided to see how completely and correctly I could do without any added research, so I wrote each topic first before checking the Wikipedia. I did well with bubble and merge sorts; quick sort was a different story -- I don't recall learning much about it back in the day.
+
+    So let's talk briefly about three sorting methods: merge sort, bubble sort, and quick sort; and also comment on "sort stability". A stable sort is one where two items maintain their original relative order in the sorted list when they have the same sort key value. In an unstable sort, they may have been swapped.
+
+    Merge sort illustrates the principle of divide and conquer. You divide the work into two piles and compare the two top elements, taking the lesser. If both work piles are already sorted, then only one pass is needed to complete the sort by merging. By recursively merge sorting each of the two piles, the work breaks down easily. This is the top-down variety of a merge sort. Merge sorts may not be stable. In early days, they had the advantage of being well-suited to data storage based on magnetic tape, as each portion of the list could be written to a separate tape before merging back.
+
+    A bubble sort is very simple and straightforward; it entails passing through the list and comparing two adjacent values. They are swapped if necessary and then the list pointer advances one position to compare the next two values. Many passes through the list may be necessary before the list is sorted, but bubble sorts can be efficient if the list is mostly sorted to begin with.
+
+    Quick sort is a fairly complicated divide and conquer sort, but it offers the ability to sort in place so little additional storage is needed. This was an important consideration when disk storage and memory were both costly assets. The central idea is to select a pivot value and reorder the list so that everything before the pivot is less than the pivot value, and everything that follows is greater. Then, you have two sublists which can be recursively sorted by the same technique.
+
+    Quick sort is on average very efficient compared with the other two methods as well as with other complex sorts like shellsorts and binary tree sorts. Variations of quicksort are the default native sort function in many programming languages and quicksort is the subject of much study, focused in particular on optimizing the choice of pivot(s) and partitioning the original list.
+
+
+    </p>
+  </section>
+
+</main>
+<div><a href="index.html">Portal</a>  <a href="../index.html">MainPage</a></div>
